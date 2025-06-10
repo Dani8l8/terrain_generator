@@ -3,11 +3,11 @@
 Image GenerateBlendedHeightmap(void) {
   
     /* Genera el terreno base */
-    Image base = GenImagePerlinNoise(TERRAIN_SIZE, TERRAIN_SIZE, 0, 0, 5.0f);
+    Image base = GenImagePerlinNoise(TERRAIN_SIZE, TERRAIN_SIZE, 0, 0, 4.0f);
     Color *basePixels = LoadImageColors(base);
 
     /* Genera un terreno auxiliar */
-    Image height_layer = GenImagePerlinNoise(TERRAIN_SIZE, TERRAIN_SIZE, 0, 0, 10.0f);
+    Image height_layer = GenImagePerlinNoise(TERRAIN_SIZE, TERRAIN_SIZE, 0, 0, 20.0f);
     Color *heightPixels = LoadImageColors(height_layer);
 
     /* Se crea una variable para almacenar los valores */
