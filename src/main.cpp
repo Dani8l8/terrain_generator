@@ -46,6 +46,7 @@ int main(void) {
     SetShaderValueMatrix(shader, GetShaderLocation(shader, "matModel"), modelMat);
 
     DrawModel(terrain, (Vector3){ 0, 0, 0 }, TERRAIN_SCALE, DARKGREEN);
+    DrawModel(terrain, (Vector3){ 0, 0, TERRAIN_SIZE }, TERRAIN_SCALE, DARKGREEN);
 
     DrawGrid(50, 5);
     EndMode3D();
